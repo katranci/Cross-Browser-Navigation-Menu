@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Drop-Down Navigation Menu</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+	<nav>
+		<ul id="nav">
+			<li><a href="">Home</a></li>
+			<li><a href=""><span id="nav-item-society">Society</span></a></li>
+			<li class="has-drop-down-menu">
+				<a href="Arts">Arts</a>
+				<ul class="drop-down-menu">
+					<li><a href="Arts/Movies">Movies</a></li>
+					<li><a href="Arts/Television">Television</a></li>
+					<li><a href="Arts/Music">Music</a></li>
+				</ul>
+			</li>
+			<li class="has-drop-down-menu">
+				<a href="Games"><span id="nav-item-games">Games</span></a>
+				<ul class="drop-down-menu">
+					<li><a href="Games/Video_Games">Video Games</a></li>
+					<li><a href="Games/Roleplaying">RPGs</a></li>
+					<li><a href="Games/Gambling">Gambling</a></li>
+				</ul>
+			</li>
+			<li class="has-drop-down-menu">
+				<a href="Computers">Computers</a>
+				<ul class="drop-down-menu">
+					<li><a href="Computers/Internet">Internet</a></li>
+					<li><a href="Computers/Software">Software</a></li>
+					<li><a href="Computers/Hardware">Hardware</a></li>
+				</ul>
+			</li>
+			<li class="has-drop-down-menu">
+				<a href="Sports"><span id="nav-item-sports">Sports</span></a>
+				<ul class="drop-down-menu">
+					<li><a href="Sports/Baseball">Baseball</a></li>
+					<li><a href="Sports/Soccer">Soccer</a></li>
+					<li><a href="Sports/Basketball">Basketball</a></li>
+				</ul>
+			</li>
+			<li class="has-drop-down-menu">
+				<a href="Science">Science</a>
+				<div id="science-nav-menu" class="drop-down-menu">
+					<a href="Science"></a>
+				</div>
+			</li>
+			<li class="has-drop-down-menu">
+				<a href="Recreation">Recreation</a>
+				<div id="recreation-nav-menu" class="drop-down-menu">
+					<p><strong>Recreation Mega Drop Down</strong></p>
+					<ul>
+						<li>
+							<!-- Image by gilbertonegocios: http://www.flickr.com/photos/gilberto_galvao/984591341/ -->
+							<a href="Recreation/Autos"><img src="assets/autos.jpg" alt="An automobile picture" />Autos</a>
+						</li>
+						<li>
+							<!-- Image by ssoosay: http://www.flickr.com/photos/ssoosay/6750137587/ -->
+							<a href="Arts/Crafts"><img src="assets/arts.jpg" alt="A craft picture" />Crafts</a>
+						</li>
+						<li>
+							<!-- Image by rfm_ro: http://www.flickr.com/photos/rfm/2244682121/ -->
+							<a href="Recreation/Food"><img src="assets/food.jpg" alt="A food picture" />Food</a>
+						</li>
+						<li>
+							<!-- Image by raider3_anime: http://www.flickr.com/photos/raider3_anime/4499063644/ -->
+							<a href="Games"><img src="assets/games.jpg" alt="A food picture" />Games</a>
+						</li>
+						<li>
+							<!-- Image by rowanf: http://www.flickr.com/photos/rowanf/2439651489/ -->
+							<a href="Society/Genealogy"><img src="assets/genealogy.jpg" alt="A genealogy related picture" />Genealogy</a>
+						</li>
+						<li>
+							<!-- Image by chengleng: http://www.flickr.com/photos/chengleng/425246060/ -->
+							<a href="Recreation/Pets"><img src="assets/pets.jpg" alt="A pet picture" />Pets</a>
+						</li>
+						<li>
+							<!-- Image by tango.mceffrie: http://www.flickr.com/photos/cryptozoologist/3060318221/ -->
+							<a href="Recreation/Scouting"><img src="assets/scouting.jpg" alt="A scouting related picture" />Scouting</a>
+						</li>
+						<li>
+							<!-- Image by r8r: http://www.flickr.com/photos/r8r/255233114/ -->
+							<a href="Sports"><img src="assets/sports.jpg" alt="A sports related picture" />Sports</a>
+						</li>
+						<li>
+							<!-- Image by pantranco_bus: http://www.flickr.com/photos/busesinthephilippines/4909896027/ -->
+							<a href="Recreation/Travel"><img src="assets/travel.jpg" alt="A travel related picture" />Travel</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

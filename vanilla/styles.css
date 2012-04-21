@@ -1,0 +1,155 @@
+body {width: 960px; margin: 5% auto; font: 13px/1.5 Verdana, sans-serif;}
+a {text-decoration: none;}
+strong {font-weight: bold; color: #333;}
+
+
+#nav {
+	/* Cannot use overflow: hidden because that would not show the drop-down menus. So set a height instead */
+	height: 40px;
+
+	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+
+	background: #4169E1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#78aacf', endColorstr='#4169E1');
+	background: -webkit-gradient(linear, left top, left bottom, from(#7295fd), to(#4169E1));
+	background: -moz-linear-gradient(top,  #78aacf,  #4169E1);
+}
+
+#nav > li {
+	float: left;
+	position: relative;
+}
+
+#nav > li > a {
+	display: block;
+	padding: 0 15px;
+	line-height: 40px;	/* This needs to be equal to the height of #nav */
+	vertical-align: middle;
+	border-left: 2px solid #325ad4;
+	color: #FFF;
+}
+
+#nav li:first-child > a {
+	border-left: none;
+}
+
+#nav > li.has-drop-down-menu > a {
+	padding-right: 24px;
+	background: url("assets/arrow.gif") no-repeat center right;
+}
+
+/* This is used as a container for navigation items with an icon */
+#nav > li > a > span {
+	display: block;
+}
+
+#nav .drop-down-menu {
+	display: none;
+	position: absolute; top: 40px; left: 0;
+	border: 2px solid #325ad4; /* This is the same colour as the left border of the navigation items */
+	border-top: none;
+
+	-moz-border-radius: 0 0 5px 5px;
+  	-webkit-border-radius: 0 0 5px 5px;
+  	border-radius: 0 0 5px 5px;
+
+	-moz-box-shadow: 0 3px 3px #999;
+  	-webkit-box-shadow: 0 3px 3px #999;
+  	box-shadow: 0 3px 3px #999;
+}
+
+#nav .drop-down-menu-visible {
+	display: block;
+}
+
+/* 
+Let's define some icon based navigation items
+The icons are from http://glyphish.com/
+ */
+#nav-item-games {
+	background: url("assets/puzzle.png") no-repeat left center;
+	width: 28px;
+	text-indent: -9999em;
+}
+
+#nav-item-society {
+	background: url("assets/user.png") no-repeat left center;
+	width: 24px;
+	text-indent: -9999em;
+}
+
+#nav-item-sports {
+	background: url("assets/runner.png") no-repeat left center;
+	padding-left: 22px;
+}
+
+
+
+/* A basic list of items as a drop-down menu */
+#nav ul.drop-down-menu {
+	width: 200px;
+	padding: 0 10px;
+}
+
+#nav ul.drop-down-menu li a {
+	display: block;
+	line-height: 40px;
+	vertical-align: middle;
+	border-top: 1px solid #CCC;
+}
+
+#nav ul.drop-down-menu li:first-child a {
+	border-top: none;
+}
+
+
+/* An example of a mega-drop-down menu */
+#recreation-nav-menu {
+	width: 300px;
+	padding: 10px;
+}
+
+#recreation-nav-menu ul {
+	overflow: hidden;
+}
+
+#recreation-nav-menu ul li {
+	float: left;
+	width: 100px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#recreation-nav-menu a {
+	display: block;
+	text-align: center;
+}
+
+#recreation-nav-menu img {
+	display: block;
+	width: 100px;
+	height: 63px;
+	margin: 0 auto;
+}
+
+
+/* Another example of a mega-drop-down menu */
+#science-nav-menu {
+	width: 400px;
+	height: 302px;
+}
+
+/* Following image by cephalopodcast: http://www.flickr.com/photos/cephalopodcast/4241626259/ */
+#science-nav-menu a {
+	display: block;
+	width: 400px;
+	height: 302px;
+	background: url("assets/science.jpg") no-repeat top left;
+
+	-moz-border-radius: 0 0 4px 4px;
+  	-webkit-border-radius: 0 0 4px 4px;
+  	border-radius: 0 0 4px 4px;
+}
